@@ -10,12 +10,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀Tommy Tang's testsite!</h1>
-			<h1>🧑‍🚀 Main Branch change</h1>
-		</main>
-		<Footer />
-	</body>
+<body>
+    <h1>SuperStoreUS 2015销售分析报告</h1>
+    
+    <section>
+        <h2>数据概览</h2>
+        <p>分析基于2015年销售数据，包含160条订单记录</p>
+    </section>
+    
+    <section class="insight">
+        <h2>关键发现</h2>
+        <ul>
+            <li>西部地区销售额最高，占总销售额的63%</li>
+            <li>家具类产品贡献了最大销售额</li>
+            <li>办公用品类产品利润率最高</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>按地区销售额分布</h2>
+        <div class="chart">
+            <img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22bar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22West%22%2C%22East%22%2C%22Central%22%2C%22South%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22%E9%94%80%E5%94%AE%E9%A2%9D%22%2C%22data%22%3A%5B6362.85%2C1876.69%2C293.06%2C33.47%5D%2C%22backgroundColor%22%3A%5B%22%2336A2EB%22%2C%22%23FF6384%22%2C%22%23FFCE56%22%2C%22%234BC0C0%22%5D%7D%5D%7D%2C%22options%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22%E6%8C%89%E5%9C%B0%E5%8C%BA%E9%94%80%E5%94%AE%E9%A2%9D%E5%88%86%E5%B8%83%22%7D%7D%7D" alt="按地区销售额分布">
+        </div>
+    </section>
+    
+    <section>
+        <h2>产品类别销售占比</h2>
+        <div class="chart">
+            <img src="https://quickchart.io/chart?c=%7B%22type%22%3A%22pie%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Office%20Supplies%22%2C%22Furniture%22%2C%22Technology%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22%22%2C%22data%22%3A%5B211.15%2C6362.85%2C945.99%5D%2C%22backgroundColor%22%3A%5B%22%23FF6384%22%2C%22%2336A2EB%22%2C%22%23FFCE56%22%5D%7D%5D%7D%2C%22options%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22%E4%BA%A7%E5%93%81%E7%B1%BB%E5%88%AB%E9%94%80%E5%94%AE%E5%8D%A0%E6%AF%94%22%7D%7D%7D" alt="产品类别销售占比">
+        </div>
+    </section>
+</body>
 </html>
